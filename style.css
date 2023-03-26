@@ -1,0 +1,121 @@
+/* regras CSS para telas com largura máxima de 600px */
+@media only screen and (max-width: 600px){
+
+/* Estilo global */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    }
+}
+.font-roboto {
+    font-family: "Roboto", sans-serif;
+    }
+    
+    /* Estilo da barra de navegação */
+    nav {
+    background-color: #583156;
+    color: white;
+    display: flex;
+    justify-content: center;
+    }
+    
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+    
+    nav li {
+    margin: 0 1rem;
+    }
+    
+    nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    }
+    
+    nav a:hover {
+    color: #2A879F;
+    }
+    
+    /* Estilo das páginas */
+    .pagina {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .pagina h2 {
+    margin-top: 0;
+    }
+    
+    /* Estilo para esconder e mostrar as páginas */
+    .oculto {
+    display: none;
+    }
+    
+    .mostrar {
+    display: block;
+    }
+    
+    /* Estilo da galeria de fotos */
+    .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    }
+    
+    .galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    }
+    
+    /* Estilo do formulário de contato */
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    label {
+    font-weight: bold;
+    margin-top: 1rem;
+    }
+    
+    input, textarea {
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 0.25rem;
+    border: 1px solid #E0E0E0;
+    font-size: 1rem;
+    }
+    
+    textarea {
+    height: 10rem;
+    }
+    
+    button[type="submit"] {
+    background-color: #1B4C61;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    }
+    
+    button[type="submit"]:hover {
+    background-color: #2A879F;
+    }
