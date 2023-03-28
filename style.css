@@ -1,6 +1,3 @@
-/* regras CSS para telas com largura máxima de 600px */
-@media only screen and (max-width: 400px){
-
 /* Estilo global */
 body {
     font-family: "Roboto", sans-serif;
@@ -8,7 +5,7 @@ body {
     padding: 0;
     
     }
-}
+
 .font-roboto {
     font-family: "Roboto", sans-serif;
     }
@@ -42,7 +39,7 @@ body {
     }
     
     nav a:hover {
-    color: #2A879F;
+    color: #532a9f;
     }
     
     /* Estilo das páginas */
@@ -106,7 +103,7 @@ body {
     }
     
     button[type="submit"] {
-    background-color: #1B4C61;
+    background-color: #532a9f; 
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
@@ -117,5 +114,12 @@ body {
     }
     
     button[type="submit"]:hover {
-    background-color: #2A879F;
+    background-color: #9b7ada;
+    }
+/* Media Query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .pagina {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
     }

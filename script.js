@@ -11,18 +11,16 @@ links.forEach(link => {
     const href = link.getAttribute('href'); // obtém o valor do atributo href do link
     const targetSection = document.querySelector(href); // seleciona a seção correspondente
     
-    // Esconde todas as seções, exceto a correspondente ao link clicado
-    sections.forEach(section => {
-      if (section !== targetSection) {
-        section.classList.add('oculto');
-      }
-    });
-    
-    // Verifica se a seção correspondente está oculta
+    // Verifica se a seção correspondente já está visível
     if (targetSection.classList.contains('oculto')) {
-      targetSection.classList.remove('oculto'); // exibe a seção
-    } else {
-      targetSection.classList.add('oculto'); // oculta a seção
+      // Oculta todas as outras seções e exibe a seção correspondente
+      sections.forEach(section => {
+        if (section !== targetSection) {
+          section.classList.add('oculto');
+        } else {
+          section.classList.remove('oculto');
+        }
+      });
     }
   });
 });
